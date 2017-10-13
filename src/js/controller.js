@@ -87,6 +87,8 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
     $urlRouterProvider.otherwise('/')
 
+    $locationProvider.html5Mode(true).hashPrefix('')
+
 })
 
 app.controller('mainController', ['$scope', function($scope){
