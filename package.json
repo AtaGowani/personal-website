@@ -5,7 +5,9 @@
   "main": "index.html",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.7",
-    "bootstrap": "^4.0.0-beta"
+    "angular": "^1.6.6",
+    "bootstrap": "^4.0.0-beta",
+    "webpack": "^3.7.1"
   },
   "devDependencies": {},
   "scripts": {
