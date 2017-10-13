@@ -1,0 +1,10 @@
+[
+  {
+    "name": "The Flash",
+    "image": "./src/imgs/showPosters/theFlash.jpg"
+  },
+  {
+    "name": "The Big Bang Theory",
+    "image": "./src/imgs/showPosters/theBigBangTheory.jpg"
+  }
+]

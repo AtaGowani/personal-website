@@ -1,6 +1,39 @@
 <div>
-  <img src="./src/imgs/books.png" alt="Books">
-</div>
-<div>
-  <img src="./src/imgs/tv.png" alt="Shows">
+  <div class="intro-favorites text-center">
+    <p>A short list of things that have earned a special place in my heart.</p>
+  </div>
+  <div class="fav-intro-icon text-center">
+    <img src="./src/imgs/books.png" alt="Books">
+  </div>
+  <div class="d-flex flex-wrap flex-row justify-content-center text-center">
+    <div class="item" ng-repeat="book in books">
+      <img src="{{book.image}}" alt"{{book.name}}">
+      <div class="item-description">
+        <h3>{{book.name}}</h3>
+        <h5>{{book.author}}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="fav-intro-icon text-center">
+    <img src="./src/imgs/tv.png" alt="TVShows">
+  </div>
+  <div class="d-flex flex-wrap flex-row justify-content-center text-center">
+      <div class="item" ng-repeat="show in shows">
+        <img src="{{show.image}}" alt"{{show.name}}">
+      <div class="item-description">
+        <h3>{{show.name}}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="fav-intro-icon text-center">
+    <img src="./src/imgs/hero.svg" alt="SuperHeros">
+  </div>
+  <div class="d-flex flex-wrap flex-row justify-content-center text-center">
+      <div class="item" ng-repeat="hero in heros">
+        <img src="{{hero.image}}" alt"{{hero.name}}">
+      <div class="item-description">
+        <h3>{{hero.name}}</h3>
+      </div>
+    </div>
+  </div>
 </div>

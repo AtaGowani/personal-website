@@ -1,0 +1,27 @@
+[
+  {
+    "name": "The Glass Castle",
+    "author": "Jeannette Walls",
+    "image": "./src/imgs/bookCovers/theGlassCastle.jpg"
+  },
+  {
+    "name": "A Long Way Gone",
+    "author": "Ishmael Beah",
+    "image": "./src/imgs/bookCovers/aLongWayGone.jpg"
+  },
+  {
+    "name": "Saint Anything",
+    "author": "Sarah Dessen",
+    "image": "./src/imgs/bookCovers/saintAnything.jpg"
+  },
+  {
+    "name": "A List of Things That Didn't Kill Me: A Memoir",
+    "author": "Jason Schmidt",
+    "image": "./src/imgs/bookCovers/aListOfThingsThatDidntKillMe.jpg"
+  },
+  {
+    "name": "I Can't Make This Up: Life Lessons",
+    "author": "Kevin Hart",
+    "image": "./src/imgs/bookCovers/iCantMakeThisUp.png"
+  }
+]

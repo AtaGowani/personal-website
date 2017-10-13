@@ -133,6 +133,24 @@ app.controller('resumeController', ['$scope', function($scope){
   $scope.imgURL = './src/imgs/resume.png'
 }]);
 
-app.controller('favoritesController', ['$scope', function($scope){
+app.controller('favoritesController', ['$scope', '$http', function($scope, $http){
   $scope.imgURL = './src/imgs/favorites.png'
+
+  $http.get('./src/data/books.json').then(function(res){
+    $scope.books = res.data
+  }, function(error){
+    console.log(error)
+  })
+
+  $http.get('./src/data/shows.json').then(function(res){
+    $scope.shows = res.data
+  }, function(error){
+    console.log(error)
+  })
+
+  $http.get('./src/data/heros.json').then(function(res){
+    $scope.heros = res.data
+  }, function(error){
+    console.log(error)
+  })
 }]);
