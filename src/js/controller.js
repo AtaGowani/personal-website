@@ -103,11 +103,11 @@ app.controller('projectsController', ['$scope', '$http', function($scope, $http)
   $scope.imgURL = './src/imgs/projects.png'
   $scope.projects = []
 
-  $http.get('https://api.github.com/users/atagowani/repos?sort=updated?client_id=fb68a4bf850e99493dc0&client_secret=5e55788e0a0dc7655d3d37e5bef23348ec686633').then(function (res) {
+  $http.get('https://api.github.com/users/atagowani/repos?sort=updated').then(function (res) {
     res.data.forEach(function (repo) {
-      if (repo.fork === false && !repo.description) {
+      if (repo.fork === false && repo.description != '') {
         var languagesUsed = []
-        var languages_api = repo.languages_url + '?client_id=fb68a4bf850e99493dc0&client_secret=5e55788e0a0dc7655d3d37e5bef23348ec686633'
+        var languages_api = repo.languages_url
         $http.get(languages_api).then(function(res){
           console.log(res.data)
           languagesUsed = res.data
