@@ -179,3 +179,45 @@ h1.index-link {
 .fav-intro-icon img {
   height: 65px;
 }
+
+@media (max-width: 414px) {
+  h1.index-link {
+    font-size: 3.4rem;
+  }
+
+  .menu {
+    font-size: 1rem;
+  }
+
+  .main-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  h1.index-link {
+    font-size: 2.95rem;
+  }
+
+  .menu {
+    font-size: .85rem;
+  }
+
+  .main-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  h1.index-link {
+    font-size: 2.2rem;
+  }
+
+  .menu {
+    font-size: .63rem;
+  }
+
+  .main-text {
+    font-size: 1.2rem;
+  }
+}
