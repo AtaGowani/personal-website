@@ -105,7 +105,7 @@ app.controller('projectsController', ['$scope', '$http', function($scope, $http)
 
   $http.get('https://api.github.com/users/atagowani/repos?sort=updated').then(function (res) {
     res.data.forEach(function (repo) {
-      if (repo.fork === false && repo.description != '') {
+      if (repo.fork === false && repo.description) {
         var languagesUsed = []
         var languages_api = repo.languages_url
         $http.get(languages_api).then(function(res){
