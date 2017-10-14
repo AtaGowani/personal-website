@@ -180,7 +180,7 @@ h1.index-link {
   height: 65px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 450px) {
   h1.index-link {
     font-size: 3.4rem;
   }
@@ -194,7 +194,7 @@ h1.index-link {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 406px) {
   h1.index-link {
     font-size: 2.95rem;
   }
@@ -208,7 +208,7 @@ h1.index-link {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 373px) {
   h1.index-link {
     font-size: 2.2rem;
   }
