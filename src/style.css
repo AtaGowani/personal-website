@@ -90,8 +90,9 @@ h1.index-link {
 .project-div {
   border: solid #606060 1px;
   margin: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
   flex: 1;
+  min-width: 20rem;
 }
 
 .project-link {
