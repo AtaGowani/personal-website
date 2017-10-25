@@ -1,4 +1,4 @@
-var app = angular.module('AtaGowaniApp', ['ui.router']);
+var app = angular.module('AtaGowaniApp', ['ui.router'])
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
@@ -88,7 +88,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
     $urlRouterProvider.otherwise('/')
 
     //$locationProvider.html5Mode(true)
-    //$locationProvider.hashPrefix(' ');
+    //$locationProvider.hashPrefix(' ')
 
 })
 
@@ -112,8 +112,18 @@ app.controller('projectsController', ['$scope', '$http', function($scope, $http)
         $http.get(languages_api).then(function(res){
           console.log(res.data)
           languagesUsed = res.data
+          var repo_name_array = repo.name.split("-")
+          var repo_name = null;
+          repo_name_array.map(function(name){
+            if (!repo_name) {
+              repo_name = name;
+            } else {
+              repo_name += name + " "
+            }
+          })
+          console.log("REPO NAME:" + repo_name)
           $scope.projects.push({
-            name: repo.name,
+            name: repo_name,
             description: repo.description,
             github: repo.html_url,
             URL: repo.homepage,
@@ -132,7 +142,7 @@ app.controller('projectsController', ['$scope', '$http', function($scope, $http)
 
 app.controller('resumeController', ['$scope', function($scope){
   $scope.imgURL = './src/imgs/resume.png'
-}]);
+}])
 
 app.controller('favoritesController', ['$scope', '$http', function($scope, $http){
   $scope.imgURL = './src/imgs/favorites.png'
@@ -154,4 +164,4 @@ app.controller('favoritesController', ['$scope', '$http', function($scope, $http
   }, function(error){
     console.log(error)
   })
-}]);
+}])
