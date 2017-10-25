@@ -116,7 +116,7 @@ app.controller('projectsController', ['$scope', '$http', function($scope, $http)
           var repo_name = null;
           repo_name_array.map(function(name){
             if (!repo_name) {
-              repo_name = name;
+              repo_name = name + " ";
             } else {
               repo_name += name + " "
             }
