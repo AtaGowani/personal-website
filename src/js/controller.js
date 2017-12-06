@@ -110,7 +110,6 @@ app.controller('projectsController', ['$scope', '$http', function($scope, $http)
         var languagesUsed = []
         var languages_api = repo.languages_url
         $http.get(languages_api).then(function(res){
-          console.log(res.data)
           languagesUsed = res.data
           var repo_name_array = repo.name.split("-")
           var repo_name = null;
@@ -121,7 +120,6 @@ app.controller('projectsController', ['$scope', '$http', function($scope, $http)
               repo_name += name + " "
             }
           })
-          console.log("REPO NAME:" + repo_name)
           $scope.projects.push({
             name: repo_name,
             description: repo.description,
@@ -130,14 +128,11 @@ app.controller('projectsController', ['$scope', '$http', function($scope, $http)
             languages: languagesUsed
           })
         }, function (error) {
-          console.log(error)
         })
       }
     })}, function (error) {
     console.error(error)
   })
-
-  console.log($scope.projects)
 }])
 
 app.controller('resumeController', ['$scope', function($scope){
