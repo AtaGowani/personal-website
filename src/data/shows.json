@@ -6,5 +6,9 @@
   {
     "name": "The Big Bang Theory",
     "image": "./src/imgs/showPosters/theBigBangTheory.jpg"
+  },
+  {
+    "name": "The Office",
+    "image": "./src/imgs/showPosters/theOffice.jpg"
   }
 ]
