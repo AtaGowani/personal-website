@@ -101,7 +101,7 @@ h1.index-link {
 
 .project-link,
 .social-links a img {
-  height: 25px;
+  height: 30px;
   margin-right: .1rem;
 }
 
@@ -110,7 +110,7 @@ h1.index-link {
 }
 
 .social-links {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .project-link:hover {
