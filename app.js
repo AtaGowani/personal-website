@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import './src/style.css'
+import './src/css/style.css'
 import 'bootstrap';
 
 //var $ = require("jquery")
